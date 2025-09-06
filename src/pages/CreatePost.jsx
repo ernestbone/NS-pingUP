@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { dummyUserData } from '../assets/assets';
 import { Image, X } from 'lucide-react';
+import toast from 'react-hot-toast';
 
 const CreatePost = () => {
   const [content, setContent] = useState('');
@@ -8,6 +9,8 @@ const CreatePost = () => {
   const [loading, setLoading] = useState(false);
 
   const user = dummyUserData;
+
+  const handleSubmit = async () => {};
 
   return (
     <div
@@ -91,6 +94,14 @@ const CreatePost = () => {
               onChange={(e) => setImages([...images, ...e.target.files])}
             />
             <button
+              disabled={loading}
+              onClick={() =>
+                toast.promise(handleSubmit(), {
+                  loading: 'uploading...',
+                  success: <p>Post Added</p>,
+                  error: <p>Post Not Added</p>,
+                })
+              }
               className="text-sm bg-gradient-to-r from-indigo-500 to-purple-600 hover:from-indigo-600 hover:to-purple-700 
             active:scale-95 transition text-white font-medium px-8 py-2
             rounded-md cursor-pointer "
