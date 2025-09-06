@@ -1,12 +1,22 @@
-# React + Vite
+📱 NS PingUp
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern social media platform where users can connect, share posts, follow friends, and engage with communities.
 
-Currently, two official plugins are available:
+🚀 Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔐 User Authentication – Secure sign up/login with JWT or OAuth
 
-## Expanding the ESLint configuration
+📝 Create & Share Posts – Text, images, and videos
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+❤️ Likes & Comments – Engage with friends and followers
+
+👥 Follow System – Build your network and stay connected
+
+🔔 Real-Time Notifications – Stay updated instantly
+
+🌓 Dark Mode – Clean, modern UI with theme toggle
+
+🛠️ Tech Stack
+
+Frontend: React / Next.js, TailwindCSS
+Backend: Node.js, Express.js
